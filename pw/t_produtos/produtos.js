@@ -24,3 +24,15 @@ const getNames = (products) => {
 const getBySupplier = (products, supplier) => {
     return products.filter(product => product.supplier === supplier);
 }
+
+const getAvgStock = (products) => {
+    const sum = products.reduce((total, product) => total + product.stock, 0);
+    return sum / products.length;
+}
+
+export default {
+    products,
+    getNames,
+    getBySupplier,
+    getAvgStock,
+}
