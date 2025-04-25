@@ -1,0 +1,23 @@
+import { StyleSheet, Dimensions } from "react-native"
+
+const windowWidth = Dimensions.get('window').width;
+
+export default StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#212529',
+    },
+    title: {
+        fontSize: 24,
+        marginBottom: 20,
+    },
+    buttonContainer: {
+        backgroundColor: '#eee',
+        opacity: 0.1,
+        margin: 10,
+        width: windowWidth * 0.5,
+        borderRadius: 5,
+    }
+});
