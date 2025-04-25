@@ -7,7 +7,7 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#9370db',
+    backgroundColor: '#212529',
   },
   title: {
     fontSize: 24,

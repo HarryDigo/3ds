@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, Text, View } from 'react-native';
 
-import styles from './Details.module.styles';
+import styles from './Home.module.styles';
 
-export function Details(props) {
+export function Home(props) {
   const { navigation } = props;
 
   return (
@@ -11,8 +11,8 @@ export function Details(props) {
       <Text style={styles.title}></Text>
       <View style={styles.buttonContainer}>
         <Button 
-          title='Go to Home'
-          onPress={() => navigation.navigate('Home')}
+          title='Go to Details'
+          onPress={() => navigation.navigate('Details')}
         />
       </View>
       <View style={styles.buttonContainer}>
