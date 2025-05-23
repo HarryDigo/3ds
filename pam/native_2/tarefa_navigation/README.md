@@ -1,4 +1,4 @@
-# Tarefa de navegação Native ~v~
+# Tarefa de navegação Native ^-^
 
 ## Execução
 
