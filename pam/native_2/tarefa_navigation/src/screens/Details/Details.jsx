@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button, Text, View } from 'react-native';
 
-import styles from './Profile.module.styles';
+import styles from './Details.module.styles';
 
-export function Profile(props) {
+export function Details(props) {
   const { navigation } = props;
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}></Text>
+      <Text style={styles.title}>Details</Text>
       <View style={styles.buttonContainer}>
         <Button 
           title='Go to Home'
@@ -17,8 +17,14 @@ export function Profile(props) {
       </View>
       <View style={styles.buttonContainer}>
         <Button 
-          title='Go to Details'
-          onPress={() => navigation.navigate('Details')}
+          title='Go to Profile'
+          onPress={() => navigation.navigate('Profile')}
+        />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button 
+          title='Go Back'
+          onPress={() => navigation.goBack()}
         />
       </View>
     </View>

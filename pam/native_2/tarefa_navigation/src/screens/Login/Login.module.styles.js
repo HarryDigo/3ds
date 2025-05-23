@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native'
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -7,13 +7,14 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#48d1cc',
+    backgroundColor: '#212529',
   },
   title: {
     fontSize: 24,
     marginBottom: 20,
+    color: '#fff',
   },
-  buttonContainer: {
+  inputContainer: {
     backgroundColor: '#eee',
     margin: 10,
     width: windowWidth * 0.5,

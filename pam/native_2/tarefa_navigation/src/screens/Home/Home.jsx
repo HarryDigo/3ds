@@ -8,7 +8,7 @@ export function Home(props) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}></Text>
+      <Text style={styles.title}>Home</Text>
       <View style={styles.buttonContainer}>
         <Button 
           title='Go to Details'
