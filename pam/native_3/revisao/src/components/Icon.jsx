@@ -10,14 +10,13 @@ export function Icon({ image }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: 4
+    padding: 4,
+    borderRadius: 5
   },
   icon: {
-    width: 24,
-    height: 24,
+    width: 36,
+    height: 36,
   },
 })

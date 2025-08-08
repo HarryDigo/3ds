@@ -1,25 +1,28 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Dimensions, Pressable, StyleSheet, Text, View } from "react-native";
 
-export function CustomButton({ title, color, onPress, children }) {
+export function CustomButton({ title, color, theme, onPress, children }) {
   return (
     <Pressable
       onPress={onPress}
-      style={[styles.button, ({ pressed }) => (styles.pressed)]}
+      style={({ pressed }) => ([pressed && styles.pressed, styles.button, { backgroundColor: color }])}
     >
-      <View style={{ marginLeft: auto }}>
+      <View style={{ marginRight: 'auto' }}>
         {children}
       </View>
-      <Text style={{ color: 'white' }}>{title}</Text>
+      <View>
+        <Text style={{ color: theme == 'light' ? 'white' : 'gray-700' }}>{title}</Text>
+      </View>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   button: {
-    flex: 1,
-    backgroundColor: color,
-    padding: 10,
-    borderRadius: 5,
+    flexDirection: 'row',
+    width: Dimensions.get('window').width * .8,
+    height: 80,
+    paddingHorizontal: 15,
+    borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
   },
