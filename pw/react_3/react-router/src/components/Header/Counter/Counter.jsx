@@ -1,6 +1,6 @@
-import styles from './Counter.module.css';
+import styles from './Counter.module.css'
 
-import { UseCounterContext } from '../../../hooks';
+import { UseCounterContext } from '../../../hooks'
 
 const Counter = () => {
   const { count, increment } = UseCounterContext();
@@ -13,4 +13,4 @@ const Counter = () => {
   )
 }
 
-export { Counter };
+export { Counter }

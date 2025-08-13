@@ -7,4 +7,4 @@ const Error = () => {
   )
 }
 
-export { Error };
+export { Error }

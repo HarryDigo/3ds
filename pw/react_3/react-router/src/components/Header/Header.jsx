@@ -1,11 +1,9 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
-import { UseCounterContext } from '../../hooks';
+import { Counter } from './Counter'
+import { HeaderLink } from './HeaderLink'
 
-import { Counter } from './Counter';
-import { HeaderLink } from './HeaderLink';
-
-import styles from './Header.module.css';
+import styles from './Header.module.css'
 
 const Header = () => {
   return (
@@ -20,14 +18,14 @@ const Header = () => {
       <Counter />
 
       <nav className={styles.navbar}>
-        <HeaderLink route='/' text='Home' />
+        <HeaderLink route='/'>Home</HeaderLink>
         <div className={styles.divider} />
-        <HeaderLink route='/counter' text='Contador' />
+        <HeaderLink route='/counter'>Contador</HeaderLink>
         <div className={styles.divider} />
-        <HeaderLink route='/users' text='Usuários' />
+        <HeaderLink route='/users'>Usuários</HeaderLink>
       </nav>
     </header>
   );
 }
 
-export { Header };
+export { Header }

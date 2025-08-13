@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
-import { UserList } from '../components/';
+import { UserList } from '../components/'
 
 const Users = () => {
   const [users, setUsers] = useState([])
@@ -19,4 +19,4 @@ const Users = () => {
   )
 }
 
-export { Users };
+export { Users }

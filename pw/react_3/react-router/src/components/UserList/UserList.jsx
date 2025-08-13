@@ -1,9 +1,9 @@
 import './userList.module.css'
 
-import { UserCard } from './UserCard';
+import { UserCard } from './UserCard'
 
 const UserList = (props) => {
-  const { users } = props;
+  const { users } = props
   
   return (
     <ul>
@@ -14,4 +14,4 @@ const UserList = (props) => {
   )
 }
 
-export { UserList };
+export { UserList }

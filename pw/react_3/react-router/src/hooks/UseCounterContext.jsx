@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import { counterContext } from "../contexts";
+import { useContext } from 'react'
+import { counterContext } from '../contexts'
 
 const UseCounterContext = () => {
-  const context = useContext(counterContext);
+  const context = useContext(counterContext)
 
-  return context;
+  return context
 }
 
-export { UseCounterContext };
+export { UseCounterContext }

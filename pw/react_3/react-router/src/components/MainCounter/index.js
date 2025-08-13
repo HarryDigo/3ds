@@ -1,1 +1,1 @@
-export * from './MainCounter';
+export * from './MainCounter'

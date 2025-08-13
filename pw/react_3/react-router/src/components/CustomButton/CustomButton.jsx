@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import styles from './customButton.module.css';
+import styles from './customButton.module.css'
 
 const CustomButton = (props) => {
-  const { onClick, variant, children } = props;
+  const { onClick, variant, children } = props
 
   return (
     <button className={eval('styles.'+variant)} onClick={onClick}>
@@ -11,4 +11,4 @@ const CustomButton = (props) => {
   )
 }
 
-export { CustomButton };
+export { CustomButton }

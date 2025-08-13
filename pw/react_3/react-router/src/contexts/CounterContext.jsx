@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from 'react'
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const counterContext = createContext({});
+export const counterContext = createContext({})
 
 export const CounterContextProvider = ({ children }) => {
   const [count, setCount] = useState((JSON.parse(localStorage.getItem('count')) || 0))

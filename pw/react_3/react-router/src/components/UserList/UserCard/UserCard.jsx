@@ -1,7 +1,7 @@
 import styles from './userCard.module.css'
 
 const UserCard = (props) => {
-  const { index, user } = props;
+  const { index, user } = props
 
   return (
     <li key={index} className={styles.card}>
@@ -10,4 +10,4 @@ const UserCard = (props) => {
   );
 }
 
-export { UserCard };
+export { UserCard }

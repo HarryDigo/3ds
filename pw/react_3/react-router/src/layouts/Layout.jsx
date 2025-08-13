@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from 'react-router-dom'
 
-import { Content, Header} from "../components"
+import { Content, Header} from '../components'
 
 const Layout = () => {
   return (
