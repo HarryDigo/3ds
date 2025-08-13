@@ -1,4 +1,4 @@
-span {
+.funny {
   font-size: 175px;
   animation: funny 0.6s alternate infinite ease-in-out;
   cursor: default;
