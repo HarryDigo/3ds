@@ -1,0 +1,24 @@
+button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.6rem;
+  font-size: large;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+button:active {
+  filter: brightness(0.9);
+}
+
+.green {
+  background-color: springgreen;
+  border-color: aquamarine;
+}
+
+.red {
+  background-color:indianred;
+  border-color:crimson;
+}

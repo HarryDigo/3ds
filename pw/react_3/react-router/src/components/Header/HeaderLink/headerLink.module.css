@@ -1,0 +1,22 @@
+.link {
+  color: white;
+  opacity: 0.87;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  transition: scale 0.2s;
+}
+
+.active {
+  color: white;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  cursor: default;
+}
+
+.link:hover {
+  opacity: 1;
+  scale: 1.05;
+}

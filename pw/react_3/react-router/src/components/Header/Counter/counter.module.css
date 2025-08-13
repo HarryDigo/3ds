@@ -1,0 +1,25 @@
+.counter {
+  margin-left: auto;
+  font-size: 2rem;
+  color: white;
+  animation: counter-spin 2s infinite alternate ease-in-out;
+  transition: scale 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.counter:hover {
+  scale: 1.4;
+}
+.counter:active {
+  scale: 0.9;
+}
+
+@keyframes counter-spin {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}

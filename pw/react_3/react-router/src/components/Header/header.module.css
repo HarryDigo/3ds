@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: darkslategray;
+  border-bottom: 1px solid lightslategray;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: scale 0.2s;
+}
+
+.brand:hover {
+  scale: 1.05;
+}
+
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: lightslategray;
+}
