@@ -3,7 +3,9 @@ import { CustomButton, Icon } from "../components";
 
 import { google, dog_image } from "../assets";
 
-export function Home() {
+export function Login() {
+  const time = new Date().getHours();
+
   return (
     <>
       <View style={styles.topBar} />
@@ -11,7 +13,7 @@ export function Home() {
         <Image source={dog_image}/>
         <View style={styles.textContainer}>
           <Text style={[styles.text, {fontSize: 48, fontWeight: 500}]}>
-            Ótimo dia!
+            {time < 6 ? "Ótima noite!" : time < 12 ? "Ótimo dia!" : time < 18 ? "Ótima tarde!" : "Ótima noite!"}
           </Text>
           <Text style={[styles.text, {fontSize: 16}]}>
             Como deseja acessar?
@@ -23,14 +25,15 @@ export function Home() {
             color="#33c37d"
             onPress={() => console.log("login 1")}
             theme="light"
-            children={
-              <Icon image={google} />
-            }
-          />
+            size={400}
+          > 
+            <Icon image={google} size={36} /> 
+          </CustomButton>
           <CustomButton
-            title="Como deseja acessar?"
+            title="Outras opções"
             color="#ccc"
             onPress={() => console.log("login 2")}
+            size={400}
           />
         </View>
       </View>

@@ -1,12 +1,17 @@
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/native-stack';
 
-import { Home } from './src/screens';
+import { Login } from './src/screens';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Home />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Login'>
+        <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

@@ -1,9 +1,9 @@
 import { Image, StyleSheet, View } from "react-native";
 
-export function Icon({ image }) {
+export function Icon({ image, size }) {
   return (
     <View style={styles.container}>
-      <Image source={image} style={styles.icon} />
+      <Image source={image} style={{ width: size, height: size}} />
     </View>
   );
 }
@@ -14,9 +14,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 4,
     borderRadius: 5
-  },
-  icon: {
-    width: 36,
-    height: 36,
   },
 })
