@@ -7,11 +7,11 @@ const Counter = () => {
 
   return (
     <>
-      <h1>Contador :3c ^w^</h1>
+      <h1>Contador :3 ^w^</h1>
       <MainCounter />
       <div style={{ display: 'flex', gap: '1rem', marginTop: '3rem' }}>
         <CustomButton onClick={increment} variant='green'>Incrementar !!!!!</CustomButton>
-        <CustomButton onClick={reset} variant='red'>Reiniciar 3:</CustomButton>
+        <CustomButton onClick={reset} variant='red'>Reiniciar ):</CustomButton>
       </div>
     </>
   );

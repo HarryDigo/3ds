@@ -1,12 +1,12 @@
 import styles from './userCard.module.css'
 
 const UserCard = (props) => {
-  const { index, user } = props
+  const { user } = props
 
   return (
-    <li key={index} className={styles.card}>
+    <div className={styles.card}>
       {user.name} - {user.email}
-    </li>
+    </div>
   );
 }
 

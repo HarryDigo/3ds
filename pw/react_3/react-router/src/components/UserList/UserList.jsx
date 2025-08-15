@@ -8,7 +8,9 @@ const UserList = (props) => {
   return (
     <ul>
       {users.map(user => (
-        <UserCard index={user.id} user={user} />
+        <li key={user.id}>
+          <UserCard user={user} />
+        </li>
       ))}
     </ul>
   )
