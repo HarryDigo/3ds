@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { api } from '@services'
+import { AppContextProvider } from '@contexts'
 
 function App() {
   useEffect(() => {
@@ -7,14 +7,13 @@ function App() {
   })
 
   const test = async () => {
-    const res = await api.get('/accounts')
-    console.log(res.data)
+    console.log(localStorage.getItem('user'))
   }
 
   return (
-    <>
+    <AppContextProvider>
       {test}
-    </>
+    </AppContextProvider>
   )
 }
 

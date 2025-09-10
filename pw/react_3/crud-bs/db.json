@@ -4,7 +4,7 @@
       "name": "notebook"
     }
   ],
-  "accounts": [
+  "users": [
     {
       "id": 1,
       "username": "luna",
