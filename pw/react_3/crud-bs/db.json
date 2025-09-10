@@ -6,12 +6,12 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "0",
       "username": "luna",
       "password": "1234",
       "purchases": [
         {
-          "id": 1,
+          "id": "1",
           "name": "notebook"
         }
       ]

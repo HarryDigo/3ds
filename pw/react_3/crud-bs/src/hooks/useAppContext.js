@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { appContext } from '@contexts'
 
-export const UseAppContext = () => {
+export const useAppContext = () => {
   const context = useContext(appContext)
 
   return context
