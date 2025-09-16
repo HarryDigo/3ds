@@ -1,22 +1,15 @@
-import { useEffect } from 'react'
-import { AppContextProvider } from '@contexts'
-import { useAppContext } from '@hooks'
-import { getUserById } from '@services'
+import { BrowserRouter } from 'react-router-dom'
 
-import { Button } from 'react-bootstrap'
+import { AppContextProvider } from '@contexts'
+
+import { Router } from './Router'
 
 export const App = () => {
-  const { currentUser, userList, oi } = useAppContext();
-
-  const test = () => {
-    console.log(currentUser, userList)
-  }
-
   return (
-    <AppContextProvider>
-      <Button onClick={oi}>
-        oi
-      </Button>
-    </AppContextProvider>
+    <BrowserRouter>
+      <AppContextProvider>
+        <Router />
+      </AppContextProvider>
+    </BrowserRouter>
   )
 }

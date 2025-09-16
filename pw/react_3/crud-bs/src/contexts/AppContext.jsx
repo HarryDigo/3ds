@@ -1,27 +1,34 @@
 import { createContext, useEffect, useState } from 'react' 
-import { getUserById, getUsers } from '@services';
+import { getUserById, getUsers } from '@services'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const appContext = createContext({});
 
-const AppContextProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState();
-  const [userList, setUserList] = useState();
+export const AppContextProvider = ({ children }) => {
+  const [currentUser, setCurrentUser] = useState({})
+  const [userList, setUserList] = useState([])
+
+  const updateUserList = () => {
+    getUsers().then(users => setUserList(users))
+  }
+
+  const updateCurrentUser = (id) => {
+    getUserById(id).then(user => setCurrentUser(user))
+  }
 
   useEffect(() => {
-    getUserById(0).then(user => setCurrentUser(user));
-    getUsers().then(users => setUserList(users));
+    const userId = localStorage.getItem('user-id')
+
+    if (userId !== null) {
+      updateCurrentUser(userId)
+    }
+
+    updateUserList()
   }, []);
 
-  const oi = () => {
-    console.log('oi')
-  };
-
   return (
-    <appContext.Provider value={{ currentUser, userList, oi }}>
+    <appContext.Provider value={{ currentUser, userList, updateCurrentUser, updateUserList }}>
       {children}
     </appContext.Provider>
   )
 }
-
-export { AppContextProvider }
