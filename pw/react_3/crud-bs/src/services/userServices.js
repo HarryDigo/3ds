@@ -1,4 +1,15 @@
-import { api } from '@services'
+import { api/*, connect, getDB*/ } from '@services'
+
+// export const dbTest = async () => {
+//   try {
+//     await connect()
+
+//     await client.db('intellidriver_db').command({ ping: 1})
+//     console.log('succesfully connected')
+//   } finally {
+//     await client.close()
+//   }
+// }
 
 export const getUsers = async () => {
   try {

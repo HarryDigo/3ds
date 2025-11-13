@@ -1,9 +1,11 @@
-import { Dimensions, StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 
-export default function App() {
+import { FilterInput } from './FilterInput';
+
+export const MainMap = () => {
   return (
-    <View style={styles.container}>
+    <>
       <MapView
         style={styles.map}
         initialRegion={{
@@ -19,16 +21,14 @@ export default function App() {
           description={"Capital financeira do Brasil"}
         />
       </MapView>
-    </View>
+      <FilterInput />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
   map: {
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height,
-  }
+  },
 });
