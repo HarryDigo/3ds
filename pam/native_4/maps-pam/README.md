@@ -29,4 +29,4 @@ npm i
 npx expo start
 ```
 
-### [Vídeo](https://youtube.com)
+### [Vídeo](https://youtu.be/cweZA3j-_1I)
