@@ -19,7 +19,7 @@ export default function App() {
             bounces={false}
             enableOnAndroid
             scrollEnabled={false}
-            extraScrollHeight={285}
+            extraScrollHeight={250}
           >
             <MainMap />
           </KeyboardAwareScrollView>
