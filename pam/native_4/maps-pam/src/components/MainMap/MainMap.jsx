@@ -1,11 +1,11 @@
-import { Dimensions, StyleSheet } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import { Dimensions, StyleSheet, View } from 'react-native'
+import MapView, { Marker } from 'react-native-maps'
 
-import { FilterInput } from './FilterInput';
+import { FilterInput } from './FilterInput'
 
 export const MainMap = () => {
   return (
-    <>
+    <View style={{flex: 1}}>
       <MapView
         style={styles.map}
         initialRegion={{
@@ -22,8 +22,8 @@ export const MainMap = () => {
         />
       </MapView>
       <FilterInput />
-    </>
-  );
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height,
   },
-});
+})

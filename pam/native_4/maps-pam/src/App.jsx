@@ -1,6 +1,6 @@
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 
-import { MainMap } from './components';
+import { MainMap } from './components'
 
 export default function App() {
   return (
