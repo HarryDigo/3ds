@@ -9,7 +9,7 @@ export const MainMap = () => {
   const { mapRef, marker } = useAppContext()
 
   return (
-    <View className='flex-1'>
+    <>
       <FilterInput />
       <MapView
         style={styles.map}
@@ -27,7 +27,7 @@ export const MainMap = () => {
           description={marker.description}
         />
       </MapView>
-    </View>
+    </>
   )
 }
 
@@ -37,5 +37,5 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     zIndex: 0
-  },
+  }
 })

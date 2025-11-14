@@ -1,4 +1,4 @@
-import { Alert } from "react-native";
+import { Alert } from 'react-native'
 
 export const searchAndSetLocation = async (address, mapRef, setMarker) => {
   const url =
@@ -22,8 +22,8 @@ export const searchAndSetLocation = async (address, mapRef, setMarker) => {
       mapRef.current.animateToRegion({
         latitude: location.lat,
         longitude: location.lng,
-        latitudeDelta: 0.01,
-        longitudeDelta: 0.01
+        latitudeDelta: 0.0151, //tamanho legal do zoom para endereço específico, fica ruim para cidades/países ):
+        longitudeDelta: 0.0069 //
       }, 1000)
     } else throw new Error(data.error_message || 'Nenhum resultado encontrado.')
   } catch (error) {
